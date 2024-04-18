@@ -823,7 +823,7 @@ MonoBehaviour:
   shapeType: 0
   radius: 0.3
   height: 2
-  position: {x: 0, y: 0.18, z: 0.25}
+  position: {x: 0, y: 0.22, z: 0.245}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   collisionTags:
   - FootL
@@ -881,7 +881,7 @@ MonoBehaviour:
   shapeType: 0
   radius: 0.3
   height: 2
-  position: {x: 0, y: 0.18, z: 0.25}
+  position: {x: 0, y: 0.22, z: 0.245}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   collisionTags:
   - FootR
