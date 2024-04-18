@@ -366,6 +366,16 @@ MonoBehaviour:
     saved: 0
     hasExplicitDefaultValue: 1
     m_overrideAnimatorDefaults: 0
+  - nameOrPrefix: ShockOsc/_All_IShock
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 1
+    defaultValue: 0
+    saved: 0
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 0
 --- !u!1 &6628435738986486176
 GameObject:
   m_ObjectHideFlags: 0

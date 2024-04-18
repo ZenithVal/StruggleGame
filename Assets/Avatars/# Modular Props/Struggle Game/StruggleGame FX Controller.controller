@@ -734,6 +734,7 @@ AnimatorState:
   - {fileID: 2713946463915622243}
   m_StateMachineBehaviours:
   - {fileID: 6155665819438948083}
+  - {fileID: -3163655916499705166}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 0
@@ -1260,7 +1261,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: StruggleGame/Physbone/Ripcord_Stretch
-    m_EventTreshold: 0.05
+    m_EventTreshold: 0.025
   - m_ConditionMode: 3
     m_ConditionEvent: TrackingType
     m_EventTreshold: 5
@@ -1726,6 +1727,33 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 0
+--- !u!114 &-5565024311995153354
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -706344726, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - type: 0
+    name: ShockOsc/_All_IShock
+    source: 
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
+  localOnly: 0
+  debugString: 
 --- !u!1101 &-5377314873958441301
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1792,7 +1820,8 @@ AnimatorState:
   - {fileID: -6634552142847259265}
   - {fileID: -2109944066019070969}
   - {fileID: -2555528295850952024}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: -5565024311995153354}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 0
@@ -2331,7 +2360,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 3
   localOnly: 1
-  debugString: 
+  debugString: '[ZeniStruggleGame] Game Begin'
 --- !u!1101 &-3926902432205281553
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -2677,6 +2706,33 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 0
+--- !u!114 &-3163655916499705166
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -706344726, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - type: 0
+    name: ShockOsc/_All_IShock
+    source: 
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
+  localOnly: 0
+  debugString: 
 --- !u!1101 &-3102257546855624978
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -2975,7 +3031,7 @@ MonoBehaviour:
   - type: 1
     name: StruggleGame/Level
     source: 
-    value: -0.0345
+    value: -0.0375
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -3014,7 +3070,7 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 5
+  m_ExitTime: 12.5
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -3570,21 +3626,21 @@ MonoBehaviour:
   - type: 2
     name: StruggleGame/Level
     source: 
-    value: -0.7
-    valueMin: -0.15
-    valueMax: 0.2
+    value: 0.26
+    valueMin: 0.21
+    valueMax: 0.24
     chance: 0
     convertRange: 0
     sourceMin: 0
     sourceMax: 3
     destMin: 0.25
     destMax: 0
-  - type: 0
+  - type: 2
     name: StruggleGame/Difficulty
     source: 
     value: 0.0201
-    valueMin: 0
-    valueMax: 0
+    valueMin: 0.0201
+    valueMax: 0.1201
     chance: 0
     convertRange: 0
     sourceMin: 0
@@ -4795,6 +4851,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
+  - m_Name: ShockOsc/_All_IShock
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Struggle Game
@@ -5139,21 +5201,21 @@ MonoBehaviour:
   - type: 2
     name: StruggleGame/Level
     source: 
-    value: -0.3
-    valueMin: -0.25
-    valueMax: 0.1
+    value: 0.1
+    valueMin: 0.15
+    valueMax: 0.23
     chance: 0
     convertRange: 0
     sourceMin: 0
     sourceMax: 0
     destMin: 0
     destMax: 0
-  - type: 0
+  - type: 2
     name: StruggleGame/Difficulty
     source: 
     value: 0.00101
-    valueMin: 0
-    valueMax: 0
+    valueMin: 0.0201
+    valueMax: 0.1001
     chance: 0
     convertRange: 0
     sourceMin: 0
@@ -6151,6 +6213,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parameters:
+  - type: 1
+    name: StruggleGame/SpamCounter
+    source: 
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
   - type: 0
     name: StruggleGame/LevelThreshhold
     source: 
@@ -6164,9 +6238,9 @@ MonoBehaviour:
     destMin: 0
     destMax: 0
   - type: 1
-    name: StruggleGame/SpamCounter
+    name: StruggleGame/Level
     source: 
-    value: 1
+    value: 0.0051
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -6175,10 +6249,10 @@ MonoBehaviour:
     sourceMax: 0
     destMin: 0
     destMax: 0
-  - type: 1
-    name: StruggleGame/Level
+  - type: 0
+    name: ShockOsc/_All_IShock
     source: 
-    value: 0.0051
+    value: 1
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -6799,9 +6873,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parameters:
   - type: 1
-    name: StruggleGame/Shield
+    name: StruggleGame/SpamCounter
     source: 
-    value: -0.0085
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
+  - type: 0
+    name: StruggleGame/LevelThreshhold
+    source: 
+    value: 1
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -6834,10 +6920,10 @@ MonoBehaviour:
     sourceMax: 0
     destMin: 0
     destMax: 0
-  - type: 0
-    name: StruggleGame/LevelThreshhold
+  - type: 1
+    name: StruggleGame/Shield
     source: 
-    value: 1
+    value: -0.0085
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -6846,8 +6932,8 @@ MonoBehaviour:
     sourceMax: 0
     destMin: 0
     destMax: 0
-  - type: 1
-    name: StruggleGame/SpamCounter
+  - type: 0
+    name: ShockOsc/_All_IShock
     source: 
     value: 1
     valueMin: 0
@@ -6976,9 +7062,9 @@ MonoBehaviour:
   - type: 2
     name: StruggleGame/Level
     source: 
-    value: -0.3
-    valueMin: -1.25
-    valueMax: -0.25
+    value: -0.05
+    valueMin: -0.15
+    valueMax: 0.1
     chance: 0
     convertRange: 0
     sourceMin: 0
@@ -6988,7 +7074,7 @@ MonoBehaviour:
   - type: 0
     name: StruggleGame/Difficulty
     source: 
-    value: 0.0051
+    value: 0.0201
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -9010,7 +9096,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: StruggleGame/Physbone/Ripcord_Stretch
-    m_EventTreshold: 0.05
+    m_EventTreshold: 0.025
   - m_ConditionMode: 3
     m_ConditionEvent: TrackingType
     m_EventTreshold: 5
