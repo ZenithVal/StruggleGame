@@ -5796,7 +5796,7 @@ MonoBehaviour:
   - type: 1
     name: StruggleGame/Difficulty
     source: 
-    value: 0.00501
+    value: 0.00751
     valueMin: 0
     valueMax: 0
     chance: 0
