@@ -193,6 +193,33 @@ MonoBehaviour:
   PlayOnExit: 0
   StopOnExit: 0
   playbackIndex: 0
+--- !u!114 &-8768107579350815120
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -706344726, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - type: 0
+    name: ShockOsc/_All_IShock
+    source: 
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
+  localOnly: 1
+  debugString: 
 --- !u!1101 &-8755165763491469450
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -667,7 +694,6 @@ AnimatorState:
   - {fileID: 2713946463915622243}
   m_StateMachineBehaviours:
   - {fileID: 6155665819438948083}
-  - {fileID: -3163655916499705166}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 0
@@ -1241,7 +1267,19 @@ MonoBehaviour:
   m_Script: {fileID: -706344726, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parameters: []
+  parameters:
+  - type: 0
+    name: ShockOsc/_All_IShock
+    source: 
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
   localOnly: 1
   debugString: 
 --- !u!1102 &-6136689487258220672
@@ -1493,33 +1531,6 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 0
---- !u!114 &-5565024311995153354
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -706344726, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parameters:
-  - type: 0
-    name: ShockOsc/_All_IShock
-    source: 
-    value: 0
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 0
-    sourceMin: 0
-    sourceMax: 0
-    destMin: 0
-    destMax: 0
-  localOnly: 0
-  debugString: 
 --- !u!1101 &-5377314873958441301
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1556,8 +1567,7 @@ AnimatorState:
   - {fileID: -6634552142847259265}
   - {fileID: -2109944066019070969}
   - {fileID: -2555528295850952024}
-  m_StateMachineBehaviours:
-  - {fileID: -5565024311995153354}
+  m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 0
@@ -2307,33 +2317,6 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 0
---- !u!114 &-3163655916499705166
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -706344726, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parameters:
-  - type: 0
-    name: ShockOsc/_All_IShock
-    source: 
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 0
-    sourceMin: 0
-    sourceMax: 0
-    destMin: 0
-    destMax: 0
-  localOnly: 0
-  debugString: 
 --- !u!1101 &-3102257546855624978
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -4800,6 +4783,18 @@ MonoBehaviour:
     sourceMax: 0
     destMin: 0
     destMax: 0
+  - type: 0
+    name: ShockOsc/_All_IShock
+    source: 
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
   localOnly: 0
   debugString: 
 --- !u!1107 &836483825958769649
@@ -4839,7 +4834,8 @@ AnimatorStateMachine:
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: -8768107579350815120}
   m_AnyStatePosition: {x: 40, y: 130, z: 0}
   m_EntryPosition: {x: 40, y: 100, z: 0}
   m_ExitPosition: {x: 920, y: 120, z: 0}
@@ -5538,18 +5534,6 @@ MonoBehaviour:
     sourceMax: 0
     destMin: 0
     destMax: 0
-  - type: 0
-    name: ShockOsc/_All_IShock
-    source: 
-    value: 1
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 0
-    sourceMin: 0
-    sourceMax: 0
-    destMin: 0
-    destMax: 0
   localOnly: 1
   debugString: '[ZeniStruggleGame] Pulled - Too Low'
 --- !u!114 &2481282998153266581
@@ -6175,18 +6159,6 @@ MonoBehaviour:
     name: StruggleGame/Shield
     source: 
     value: -0.0085
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 0
-    sourceMin: 0
-    sourceMax: 0
-    destMin: 0
-    destMax: 0
-  - type: 0
-    name: ShockOsc/_All_IShock
-    source: 
-    value: 1
     valueMin: 0
     valueMax: 0
     chance: 0
