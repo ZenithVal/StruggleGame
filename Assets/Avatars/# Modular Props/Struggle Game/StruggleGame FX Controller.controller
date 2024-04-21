@@ -2564,7 +2564,7 @@ MonoBehaviour:
   - type: 1
     name: StruggleGame/Level
     source: 
-    value: -0.0375
+    value: -0.0385
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -4435,7 +4435,7 @@ MonoBehaviour:
   - type: 1
     name: StruggleGame/Level
     source: 
-    value: -0.085
+    value: -0.095
     valueMin: -1
     valueMax: 1
     chance: 0
@@ -7750,7 +7750,7 @@ MonoBehaviour:
   - type: 1
     name: StruggleGame/Level
     source: 
-    value: -0.13
+    value: -0.14
     valueMin: 0
     valueMax: 0
     chance: 0
