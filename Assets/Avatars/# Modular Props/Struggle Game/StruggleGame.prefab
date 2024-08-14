@@ -130,7 +130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6701089332659350458
 Transform:
   m_ObjectHideFlags: 0
@@ -398,7 +398,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6925901796220663310
 Transform:
   m_ObjectHideFlags: 0
@@ -569,7 +569,7 @@ MonoBehaviour:
   m_Script: {fileID: -1450912254, guid: 80f1b8067b0760e4bb45023bc2e9de66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rootTransform: {fileID: 0}
+  rootTransform: {fileID: 6701089332659350458}
   shapeType: 0
   radius: 0.08
   height: 2
@@ -923,7 +923,7 @@ ParentConstraint:
     weight: 1
   - sourceTransform: {fileID: 6292009919771385013}
     weight: 0.5
-  - sourceTransform: {fileID: 0}
+  - sourceTransform: {fileID: 1667329010231039148}
     weight: 0
 --- !u!1 &6628435738874769369
 GameObject:
@@ -1468,7 +1468,7 @@ MonoBehaviour:
   m_Script: {fileID: -1450912254, guid: 80f1b8067b0760e4bb45023bc2e9de66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rootTransform: {fileID: 0}
+  rootTransform: {fileID: 4182656364543220883}
   shapeType: 0
   radius: 0.4
   height: 2
@@ -1494,7 +1494,7 @@ MonoBehaviour:
   m_Script: {fileID: -802764141, guid: 80f1b8067b0760e4bb45023bc2e9de66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rootTransform: {fileID: 0}
+  rootTransform: {fileID: 6701089332659350458}
   shapeType: 0
   radius: 0.05
   height: 2
@@ -1858,7 +1858,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1667329010231039148}
   m_Layer: 0
-  m_Name: Shield
+  m_Name: ShieldPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
