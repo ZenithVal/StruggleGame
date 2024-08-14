@@ -415,7 +415,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Armature/Hips/Spine/Chest/StruggleControls/BindReflectSend
+    path: StruggleGame/Chest/StruggleControls/BindReflectSend
     classID: 1
     script: {fileID: 0}
     flags: 16
@@ -1153,7 +1153,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Armature/Hips/Spine/Chest/StruggleControls/BindReflectSend
+    path: StruggleGame/Chest/StruggleControls/BindReflectSend
     classID: 1
     script: {fileID: 0}
     flags: 16

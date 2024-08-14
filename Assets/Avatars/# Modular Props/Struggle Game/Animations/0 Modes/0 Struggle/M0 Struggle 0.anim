@@ -33,7 +33,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Armature/Hips/Spine/Chest/StruggleControls/StruggleSensor
+    path: StruggleGame/Chest/StruggleControls/StruggleSensor
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -147,7 +147,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: stretchMotion
-    path: Armature/Hips/Spine/Chest/StruggleControls/StruggleSensor
+    path: StruggleGame/Chest/StruggleControls/StruggleSensor
     classID: 114
     script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
   - curve:
@@ -185,7 +185,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Armature/Hips/Spine/Chest/StruggleControls/BindReflectSend
+    path: StruggleGame/Chest/StruggleControls/BindReflectSend
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -204,7 +204,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Armature/Hips/Spine/Chest/StruggleControls/Shield
+    path: StruggleGame/Chest/StruggleControls/Shield
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -401,7 +401,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Armature/Hips/Spine/Chest/StruggleControls/StruggleSensor
+    path: StruggleGame/Chest/StruggleControls/StruggleSensor
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -515,7 +515,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: stretchMotion
-    path: Armature/Hips/Spine/Chest/StruggleControls/StruggleSensor
+    path: StruggleGame/Chest/StruggleControls/StruggleSensor
     classID: 114
     script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
   - curve:
@@ -553,7 +553,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Armature/Hips/Spine/Chest/StruggleControls/BindReflectSend
+    path: StruggleGame/Chest/StruggleControls/BindReflectSend
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -572,7 +572,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Armature/Hips/Spine/Chest/StruggleControls/Shield
+    path: StruggleGame/Chest/StruggleControls/Shield
     classID: 1
     script: {fileID: 0}
   - curve:

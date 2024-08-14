@@ -33,7 +33,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Armature/Hips/Spine/Chest/StruggleControls/StruggleOrientation
+    path: StruggleGame/Chest/StruggleControls/StruggleOrientation
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -375,7 +375,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Armature/Hips/Spine/Chest/StruggleControls/StruggleOrientation
+    path: StruggleGame/Chest/StruggleControls/StruggleOrientation
     classID: 1
     script: {fileID: 0}
   - curve:
