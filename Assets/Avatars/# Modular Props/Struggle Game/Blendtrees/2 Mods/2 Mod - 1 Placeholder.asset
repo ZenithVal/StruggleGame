@@ -6,10 +6,10 @@ BlendTree:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 2 Mod - 1 Mute
+  m_Name: 2 Mod - 1 Placeholder
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 729a76543da641946b87c6c89e29e9ce, type: 2}
+    m_Motion: {fileID: 7400000, guid: 0f8fcd4f5bae46f439fd099f059fc204, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -17,14 +17,14 @@ BlendTree:
     m_DirectBlendParameter: StruggleGame
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: b75d6cf9c1dce964baccba2aeb6c49d8, type: 2}
+    m_Motion: {fileID: 7400000, guid: 05b962280986c584c9b21dd1957680b3, type: 2}
     m_Threshold: 0.05
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: StruggleGame
     m_Mirror: 0
-  m_BlendParameter: Voice
+  m_BlendParameter: StruggleGame/Contact/Avoid
   m_BlendParameterY: Blend
   m_MinThreshold: 0
   m_MaxThreshold: 0.05
