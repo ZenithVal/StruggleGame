@@ -34,7 +34,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: StruggleGame/Chest/StruggleControls/BindReflectSend
+    path: StruggleGame/StruggleControls/BindReflectSend
     classID: 1
     script: {fileID: 0}
     flags: 16
@@ -55,7 +55,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: StruggleGame/Chest/StruggleControls/Shield
+    path: StruggleGame/StruggleControls/Shield
     classID: 1
     script: {fileID: 0}
     flags: 16
@@ -76,7 +76,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: StruggleGame/Chest/StruggleControls/StruggleSensor
+    path: StruggleGame/StruggleControls/StruggleSensor
     classID: 1
     script: {fileID: 0}
     flags: 16
@@ -394,7 +394,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: StruggleGame/Chest/StruggleControls/BindReflectSend
+    path: StruggleGame/StruggleControls/BindReflectSend
     classID: 1
     script: {fileID: 0}
     flags: 16
@@ -415,7 +415,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: StruggleGame/Chest/StruggleControls/Shield
+    path: StruggleGame/StruggleControls/Shield
     classID: 1
     script: {fileID: 0}
     flags: 16
@@ -436,7 +436,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: StruggleGame/Chest/StruggleControls/StruggleSensor
+    path: StruggleGame/StruggleControls/StruggleSensor
     classID: 1
     script: {fileID: 0}
     flags: 16
