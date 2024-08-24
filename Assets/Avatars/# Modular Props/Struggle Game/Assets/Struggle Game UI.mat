@@ -2866,7 +2866,7 @@ Material:
     - m_start_clearcoatglobalmask: 0
     - m_start_depthFX: 0
     - m_start_depthRimLightOptions: 0
-    - m_start_dissolve: 0
+    - m_start_dissolve: 1
     - m_start_dissolveHueShift: 0
     - m_start_emission1Options: 0
     - m_start_emission2Options: 0

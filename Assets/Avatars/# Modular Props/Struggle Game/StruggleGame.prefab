@@ -9,8 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6292009919771385013}
-  - component: {fileID: 399651215230242900}
-  - component: {fileID: 6877288273975215122}
   m_Layer: 0
   m_Name: UIHeadPos
   m_TagString: Untagged
@@ -26,50 +24,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919413077038878539}
   serializedVersion: 2
-  m_LocalRotation: {x: -5.935604e-13, y: 0.9961946, z: 0.087157466, w: -5.684342e-14}
-  m_LocalPosition: {x: -0.000000102091555, y: 0.8606359, z: 0.26554346}
+  m_LocalRotation: {x: 0.000000016320246, y: 0.9961947, z: 0.087155886, w: -0.00000018654096}
+  m_LocalPosition: {x: 0, y: -0.030000003, z: 0.27100003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6628435738874769370}
+  m_Father: {fileID: 1692362552152262463}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &399651215230242900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919413077038878539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df373bf91cf30b4bbd495e11cb1a2ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mergeTarget:
-    referencePath: Armature/Hips/Spine/Chest/Neck/Head
-  prefix: 
-  suffix: 
-  legacyLocked: 0
-  LockMode: 1
-  mangleNames: 1
---- !u!114 &6877288273975215122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919413077038878539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1888410255, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetBones:
-  - transform: {fileID: 6292009919771385013}
-    scaleFactor: 1
-    applyCondition: 1
-    defaultScaleFactorAssigned: 1
-  globalScaleFactor: 1
 --- !u!1 &1064295461380373593
 GameObject:
   m_ObjectHideFlags: 0
@@ -125,9 +86,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1279630286762931271}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.022539971, y: 0.00000011917963, z: 0.000000008058897, w: 0.99974597}
-  m_LocalPosition: {x: 0, y: 0.8892215, z: -0.0017011166}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.0000016093254, y: -0.00000011920925, z: -1.8829382e-13, w: 1}
+  m_LocalPosition: {x: 0, y: 0.89063674, z: -0.0054564476}
+  m_LocalScale: {x: 1, y: 0.9999999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6925901796220663310}
@@ -333,7 +294,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6925901796220663310
 Transform:
   m_ObjectHideFlags: 0
@@ -364,10 +325,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mergeTarget:
     referencePath: Armature/Hips/Spine/Chest/Neck
+    targetObject: {fileID: 0}
   prefix: 
   suffix: 
   legacyLocked: 0
-  LockMode: 1
+  LockMode: 2
   mangleNames: 1
 --- !u!1 &3146679047526200209
 GameObject:
@@ -504,7 +466,7 @@ MonoBehaviour:
   m_Script: {fileID: -1450912254, guid: 80f1b8067b0760e4bb45023bc2e9de66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rootTransform: {fileID: 6925901796220663310}
+  rootTransform: {fileID: 0}
   shapeType: 0
   radius: 0.08
   height: 2
@@ -756,6 +718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mergeTarget:
     referencePath: Armature/Hips/Spine/Chest
+    targetObject: {fileID: 0}
   prefix: 
   suffix: 
   legacyLocked: 0
@@ -913,12 +876,12 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6628435739495661659}
-  - {fileID: 6292009919771385013}
   - {fileID: 6662607611967071110}
   - {fileID: 6628435740238450594}
   - {fileID: 6628435739150858977}
   - {fileID: 9104262718671596912}
   - {fileID: 6925901796220663310}
+  - {fileID: 1692362552152262463}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8012225114795728157
@@ -954,6 +917,7 @@ MonoBehaviour:
   matchAvatarWriteDefaults: 0
   relativePathRoot:
     referencePath: 
+    targetObject: {fileID: 0}
   layerPriority: 10
 --- !u!114 &8249383528800416801
 MonoBehaviour:
@@ -1449,7 +1413,7 @@ MonoBehaviour:
   m_Script: {fileID: -802764141, guid: 80f1b8067b0760e4bb45023bc2e9de66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rootTransform: {fileID: 0}
+  rootTransform: {fileID: 1692362552152262463}
   shapeType: 0
   radius: 0.05
   height: 2
@@ -1719,6 +1683,66 @@ MonoBehaviour:
   receiverType: 0
   parameter: StruggleGame/Contact/Floor
   minVelocity: 0.05
+--- !u!1 &6898448627480193112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1692362552152262463}
+  - component: {fileID: 6690944587106646146}
+  m_Layer: 0
+  m_Name: Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1692362552152262463
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6898448627480193112}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.0000015916548, y: -0.0000001872535, z: 2.9804295e-13, w: 1}
+  m_LocalPosition: {x: -6.001879e-10, y: 0.89063674, z: -0.0054564476}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6292009919771385013}
+  m_Father: {fileID: 6628435738874769370}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1773428102 &6690944587106646146
+ParentConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6898448627480193112}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Weight: 1
+  m_TranslationAtRest: {x: 0, y: 0.89063674, z: -0.0054564476}
+  m_RotationAtRest: {x: 0.00018239011, y: 0, z: 0}
+  m_TranslationOffsets:
+  - {x: 0, y: 0, z: 0}
+  m_RotationOffsets:
+  - {x: 0, y: 0, z: 0}
+  m_AffectTranslationX: 1
+  m_AffectTranslationY: 1
+  m_AffectTranslationZ: 1
+  m_AffectRotationX: 1
+  m_AffectRotationY: 1
+  m_AffectRotationZ: 1
+  m_Active: 1
+  m_IsLocked: 1
+  m_Sources:
+  - sourceTransform: {fileID: 0}
+    weight: 1
 --- !u!1 &8678221318839392266
 GameObject:
   m_ObjectHideFlags: 0
