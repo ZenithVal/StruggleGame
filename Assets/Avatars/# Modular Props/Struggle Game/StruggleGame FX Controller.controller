@@ -218,6 +218,28 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 0
+--- !u!1101 &-8682830460092738252
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions: []
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 2958828034247905862}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 0
+  m_CanTransitionToSelf: 0
 --- !u!114 &-8607952425372580001
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -537,6 +559,34 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 0
+--- !u!1102 &-7550227627898012329
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ForceMid
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 2601533604302138674}
+  m_StateMachineBehaviours:
+  - {fileID: 180679494876926469}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 0
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 47761228e829a774fb2b98dfc1bae5ab, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1101 &-7512273242519252384
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -598,6 +648,69 @@ MonoBehaviour:
     destMax: 0
   localOnly: 1
   debugString: 
+--- !u!114 &-7455430616996482015
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -706344726, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - type: 0
+    name: StruggleGame/Active
+    source: 
+    value: 1
+    valueMin: 0.8
+    valueMax: 0.9
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
+  - type: 0
+    name: StruggleGame/Shield
+    source: 
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
+  - type: 2
+    name: StruggleGame/Level
+    source: 
+    value: 3
+    valueMin: 0.5
+    valueMax: 1.25
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
+  - type: 2
+    name: StruggleGame/Difficulty
+    source: 
+    value: 0.8
+    valueMin: 0.2
+    valueMax: 0.5
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
+  localOnly: 1
+  debugString: '[ZeniStruggleGame] Force Tied Low'
 --- !u!1101 &-7431917430592161999
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -713,6 +826,37 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!114 &-7176079041422252399
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1859411423, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Source: {fileID: 0}
+  SourcePath: Armature/Hips/Spine/Chest/SimpleAudioSource
+  PlaybackOrder: 0
+  ParameterName: 
+  Volume: {x: 1, y: 1}
+  VolumeApplySettings: 0
+  Pitch: {x: 1, y: 1}
+  PitchApplySettings: 0
+  Clips:
+  - {fileID: 8300000, guid: 38d13b19bb7d987458f9acd90281da67, type: 3}
+  ClipsApplySettings: 1
+  Loop: 0
+  LoopApplySettings: 1
+  DelayInSeconds: 0
+  PlayOnEnter: 1
+  StopOnEnter: 1
+  PlayOnExit: 0
+  StopOnExit: 0
+  playbackIndex: 0
 --- !u!114 &-7173291534083813408
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -799,6 +943,40 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1107 &-7094898112412948666
+AnimatorStateMachine:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Force Hit
+  m_ChildStates:
+  - serializedVersion: 1
+    m_State: {fileID: 2586528746740173094}
+    m_Position: {x: 290, y: 200, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 4090793593899304513}
+    m_Position: {x: -30, y: 360, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -7550227627898012329}
+    m_Position: {x: 180, y: 360, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 5145670251466890200}
+    m_Position: {x: 400, y: 360, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 2958828034247905862}
+    m_Position: {x: 610, y: 360, z: 0}
+  m_ChildStateMachines: []
+  m_AnyStateTransitions: []
+  m_EntryTransitions: []
+  m_StateMachineTransitions: {}
+  m_StateMachineBehaviours: []
+  m_AnyStatePosition: {x: 40, y: 70, z: 0}
+  m_EntryPosition: {x: 310, y: 100, z: 0}
+  m_ExitPosition: {x: 40, y: 40, z: 0}
+  m_ParentStateMachinePosition: {x: 290, y: 500, z: 0}
+  m_DefaultState: {fileID: 2586528746740173094}
 --- !u!114 &-7051904502741248394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1081,8 +1259,8 @@ AnimatorStateTransition:
   - m_ConditionMode: 3
     m_ConditionEvent: StruggleGame/Contact/ZeniBindReflect
     m_EventTreshold: 0
-  - m_ConditionMode: 3
-    m_ConditionEvent: StruggleGame/Contact/ZeniBindForce
+  - m_ConditionMode: 1
+    m_ConditionEvent: StruggleGame/Contact/ZeniBindForceMax
     m_EventTreshold: 0
   - m_ConditionMode: 3
     m_ConditionEvent: StruggleGame/Physbone/Ripcord_Stretch
@@ -1318,7 +1496,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Rem - Zeni Hit
+  m_Name: Rem - Force Hit
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -1422,11 +1600,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: StruggleGame/Physbone/Ripcord_IsGrabbed
-    m_EventTreshold: 0.05
-  - m_ConditionMode: 3
-    m_ConditionEvent: StruggleGame/Contact/ZeniBindForce
+  - m_ConditionMode: 1
+    m_ConditionEvent: StruggleGame/Contact/ZeniBindForceMax
     m_EventTreshold: 0.5
   - m_ConditionMode: 3
     m_ConditionEvent: TrackingType
@@ -1552,6 +1727,31 @@ AnimatorStateTransition:
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 0
+--- !u!1101 &-5279692891566796518
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: StruggleGame/Contact/ZeniBindForceMid
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -7550227627898012329}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 0
   m_CanTransitionToSelf: 0
 --- !u!1102 &-5187651541421977199
 AnimatorState:
@@ -2052,6 +2252,18 @@ MonoBehaviour:
     sourceMax: 3
     destMin: 0
     destMax: 3
+  - type: 3
+    name: StruggleGame/StartDifficulty
+    source: StruggleGame/Difficulty
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 3
+    destMin: 0
+    destMax: 3
   localOnly: 1
   debugString: '[ZeniStruggleGame] Game Begin'
 --- !u!1101 &-3926902432205281553
@@ -2206,40 +2418,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1101 &-3619381670158688446
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 3
-    m_ConditionEvent: StruggleGame/Contact/ZeniBindForce
-    m_EventTreshold: 0.5
-  - m_ConditionMode: 3
-    m_ConditionEvent: TrackingType
-    m_EventTreshold: 5
-  - m_ConditionMode: 2
-    m_ConditionEvent: FreezeLocomotion
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Armbinder
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 4090793593899304513}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 0
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 0
 --- !u!1102 &-3552656199268603786
 AnimatorState:
   serializedVersion: 6
@@ -2286,34 +2464,6 @@ AnimatorStateTransition:
   m_TransitionOffset: 0
   m_ExitTime: 1
   m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 0
---- !u!1101 &-3214418388240064077
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 3
-    m_ConditionEvent: StruggleGame/StartLevel
-    m_EventTreshold: 1.5001
-  - m_ConditionMode: 4
-    m_ConditionEvent: StruggleGame/StartLevel
-    m_EventTreshold: 2.9501
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -1989865957962000341}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 0
-  m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -2548,6 +2698,28 @@ AnimatorStateTransition:
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 0
+--- !u!1101 &-2591797022342018622
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions: []
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 2586528746740173094}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 0
   m_CanTransitionToSelf: 0
 --- !u!114 &-2568468379468517549
 MonoBehaviour:
@@ -2883,6 +3055,28 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1101 &-1737157941921915364
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions: []
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 749616140003266656}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 0
+  m_CanTransitionToSelf: 0
 --- !u!1102 &-1605306787610017055
 AnimatorState:
   serializedVersion: 6
@@ -3105,29 +3299,29 @@ MonoBehaviour:
     sourceMax: 0
     destMin: 0
     destMax: 0
-  - type: 2
+  - type: 3
     name: StruggleGame/Level
-    source: 
+    source: StruggleGame/StartLevel
     value: 0.26
     valueMin: 0.21
     valueMax: 0.24
     chance: 0
-    convertRange: 0
-    sourceMin: 0
+    convertRange: 1
+    sourceMin: 0.25
     sourceMax: 3
-    destMin: 0.25
-    destMax: 0
-  - type: 2
+    destMin: 0.21
+    destMax: -0.11
+  - type: 3
     name: StruggleGame/Difficulty
-    source: 
+    source: StruggleGame/StartDifficulty
     value: 0.0201
     valueMin: 0.0201
     valueMax: 0.1201
     chance: 0
-    convertRange: 0
+    convertRange: 1
     sourceMin: 0
-    sourceMax: 0
-    destMin: 0
+    sourceMax: 1
+    destMin: 0.15
     destMax: 0
   - type: 0
     name: StruggleGame/Counter
@@ -3204,24 +3398,24 @@ MonoBehaviour:
     sourceMax: 0
     destMin: 0
     destMax: 0
-  - type: 1
+  - type: 0
     name: StruggleGame/Level
     source: 
     value: 3
-    valueMin: 0
-    valueMax: 0
+    valueMin: 0.25
+    valueMax: 3
     chance: 0
     convertRange: 0
     sourceMin: 0
     sourceMax: 0
     destMin: 0
     destMax: 0
-  - type: 0
+  - type: 2
     name: StruggleGame/Difficulty
     source: 
     value: 0.8
-    valueMin: 0.8
-    valueMax: 0.9
+    valueMin: 0.5
+    valueMax: 1
     chance: 0
     convertRange: 0
     sourceMin: 0
@@ -3229,7 +3423,7 @@ MonoBehaviour:
     destMin: 0
     destMax: 0
   localOnly: 1
-  debugString: '[ZeniStruggleGame] Force Tied'
+  debugString: '[ZeniStruggleGame] Force Tied Max'
 --- !u!1102 &-997936998615130084
 AnimatorState:
   serializedVersion: 6
@@ -4231,13 +4425,13 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: StruggleGame/Contact/ZeniBindForce
+  - m_Name: StruggleGame/StartLevel
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: StruggleGame/StartLevel
+  - m_Name: StruggleGame/StartDifficulty
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -4261,6 +4455,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
+  - m_Name: StruggleGame/AvatarReset
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   - m_Name: Voice
     m_Type: 1
     m_DefaultFloat: 0
@@ -4269,6 +4469,36 @@ AnimatorController:
     m_Controller: {fileID: 0}
   - m_Name: Transparency
     m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: StruggleGame/Contact/ZeniBindForceAny
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: StruggleGame/Contact/ZeniBindForceMax
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: StruggleGame/Contact/ZeniBindForceMid
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: StruggleGame/Contact/ZeniBindForceLow
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: StruggleGame/Contact/ZeniBindForceRand
+    m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
@@ -4440,9 +4670,9 @@ AnimatorState:
   - {fileID: 5858416296599961245}
   - {fileID: 1657746599461683476}
   - {fileID: 14602577788823422}
-  - {fileID: -3619381670158688446}
   - {fileID: -3917694906866850100}
   - {fileID: 6979806192457165915}
+  - {fileID: 5836550694708104872}
   m_StateMachineBehaviours:
   - {fileID: -6225480222899832972}
   m_Position: {x: 50, y: 50, z: 0}
@@ -4522,6 +4752,69 @@ MonoBehaviour:
     destMax: 0
   localOnly: 1
   debugString: 
+--- !u!114 &180679494876926469
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -706344726, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - type: 0
+    name: StruggleGame/Active
+    source: 
+    value: 1
+    valueMin: 0.8
+    valueMax: 0.9
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
+  - type: 0
+    name: StruggleGame/Shield
+    source: 
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
+  - type: 2
+    name: StruggleGame/Level
+    source: 
+    value: 3
+    valueMin: 1.5
+    valueMax: 2.25
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
+  - type: 2
+    name: StruggleGame/Difficulty
+    source: 
+    value: 0.8
+    valueMin: 0.3
+    valueMax: 0.7
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
+  localOnly: 1
+  debugString: '[ZeniStruggleGame] Force Tied Mid'
 --- !u!114 &349771250338960996
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5117,6 +5410,28 @@ AnimatorStateTransition:
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 0
+--- !u!1101 &1263607590239325633
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions: []
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 749616140003266656}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 0
   m_CanTransitionToSelf: 0
 --- !u!1101 &1269598140115739557
 AnimatorStateTransition:
@@ -5720,6 +6035,60 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1102 &2586528746740173094
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ForceHit Selector
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 6913043174280404369}
+  - {fileID: -5279692891566796518}
+  - {fileID: 7965785560441374957}
+  - {fileID: 4869413153805434223}
+  - {fileID: 3598359274303309135}
+  m_StateMachineBehaviours:
+  - {fileID: -7176079041422252399}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 0
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 47761228e829a774fb2b98dfc1bae5ab, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1101 &2601533604302138674
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions: []
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 749616140003266656}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 0
+  m_CanTransitionToSelf: 0
 --- !u!1101 &2713946463915622243
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -5824,7 +6193,7 @@ MonoBehaviour:
   - type: 1
     name: StruggleGame/Difficulty
     source: 
-    value: 0.00751
+    value: 0.00651
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -5847,6 +6216,34 @@ MonoBehaviour:
     destMax: 0
   localOnly: 1
   debugString: 
+--- !u!1102 &2958828034247905862
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ForceRand
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1263607590239325633}
+  m_StateMachineBehaviours:
+  - {fileID: 4712693512953517581}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 0
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 47761228e829a774fb2b98dfc1bae5ab, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1101 &2981417068621191868
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -5968,8 +6365,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 4
-    m_ConditionEvent: StruggleGame/Contact/ZeniBindForce
+  - m_ConditionMode: 2
+    m_ConditionEvent: StruggleGame/Contact/ZeniBindForceMax
     m_EventTreshold: 0.5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1149266055577033489}
@@ -6047,6 +6444,28 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1101 &3598359274303309135
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions: []
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 131893749990812262}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 1
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 0
 --- !u!1102 &3623541045725252617
 AnimatorState:
   serializedVersion: 6
@@ -6120,7 +6539,7 @@ AnimatorStateTransition:
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
-  m_OrderedInterruption: 1
+  m_OrderedInterruption: 0
   m_CanTransitionToSelf: 0
 --- !u!114 &3746639166979663420
 MonoBehaviour:
@@ -6367,13 +6786,12 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Zeni Hit
+  m_Name: ForceMax
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 3653434734470703597}
   m_StateMachineBehaviours:
-  - {fileID: 4447466698070176631}
   - {fileID: -1119066060896499371}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -6469,37 +6887,6 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 0
---- !u!114 &4447466698070176631
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1859411423, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Source: {fileID: 0}
-  SourcePath: Armature/Hips/Spine/Chest/SimpleAudioSource
-  PlaybackOrder: 0
-  ParameterName: 
-  Volume: {x: 1, y: 1}
-  VolumeApplySettings: 0
-  Pitch: {x: 1, y: 1}
-  PitchApplySettings: 0
-  Clips:
-  - {fileID: 8300000, guid: 38d13b19bb7d987458f9acd90281da67, type: 3}
-  ClipsApplySettings: 1
-  Loop: 0
-  LoopApplySettings: 1
-  DelayInSeconds: 0
-  PlayOnEnter: 1
-  StopOnEnter: 1
-  PlayOnExit: 0
-  StopOnExit: 0
-  playbackIndex: 0
 --- !u!1101 &4500580882784457906
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -6550,7 +6937,70 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 0
---- !u!1101 &4919501769970384177
+--- !u!114 &4712693512953517581
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -706344726, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - type: 0
+    name: StruggleGame/Active
+    source: 
+    value: 1
+    valueMin: 0.8
+    valueMax: 0.9
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
+  - type: 0
+    name: StruggleGame/Shield
+    source: 
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
+  - type: 2
+    name: StruggleGame/Level
+    source: 
+    value: 3
+    valueMin: 0.25
+    valueMax: 2.75
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
+  - type: 2
+    name: StruggleGame/Difficulty
+    source: 
+    value: 0.8
+    valueMin: 0.15
+    valueMax: 0.75
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
+  localOnly: 1
+  debugString: '[ZeniStruggleGame] Force Tied Random'
+--- !u!1101 &4869413153805434223
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6558,11 +7008,11 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 3
-    m_ConditionEvent: StruggleGame/StartLevel
-    m_EventTreshold: 2.9501
+  - m_ConditionMode: 1
+    m_ConditionEvent: StruggleGame/Contact/ZeniBindForceRand
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -7103426360653711936}
+  m_DstState: {fileID: 2958828034247905862}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -6573,7 +7023,7 @@ AnimatorStateTransition:
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
-  m_OrderedInterruption: 1
+  m_OrderedInterruption: 0
   m_CanTransitionToSelf: 0
 --- !u!1102 &5106213919767046887
 AnimatorState:
@@ -6586,8 +7036,6 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: 4919501769970384177}
-  - {fileID: -3214418388240064077}
   - {fileID: -2828501697540732670}
   m_StateMachineBehaviours:
   - {fileID: -9160987878752222233}
@@ -6637,6 +7085,34 @@ AnimatorStateTransition:
   m_InterruptionSource: 1
   m_OrderedInterruption: 0
   m_CanTransitionToSelf: 0
+--- !u!1102 &5145670251466890200
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ForceLow
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: -1737157941921915364}
+  m_StateMachineBehaviours:
+  - {fileID: -7455430616996482015}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 0
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 47761228e829a774fb2b98dfc1bae5ab, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &5193313874348380319
 AnimatorState:
   serializedVersion: 6
@@ -6945,9 +7421,6 @@ AnimatorStateMachine:
     m_State: {fileID: 8743197122235473731}
     m_Position: {x: 1600, y: 1080, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 4090793593899304513}
-    m_Position: {x: 300, y: 200, z: 0}
-  - serializedVersion: 1
     m_State: {fileID: -4863458249923746802}
     m_Position: {x: 520, y: -100, z: 0}
   - serializedVersion: 1
@@ -6987,6 +7460,9 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_StateMachine: {fileID: 5750820949397642315}
     m_Position: {x: 190, y: -160, z: 0}
+  - serializedVersion: 1
+    m_StateMachine: {fileID: -7094898112412948666}
+    m_Position: {x: 300, y: 200, z: 0}
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions:
@@ -7032,6 +7508,40 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 40, y: 40, z: 0}
   m_ParentStateMachinePosition: {x: 300, y: -100, z: 0}
   m_DefaultState: {fileID: 3839455483215846766}
+--- !u!1101 &5836550694708104872
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: StruggleGame/Contact/ZeniBindForceAny
+    m_EventTreshold: 0.5
+  - m_ConditionMode: 3
+    m_ConditionEvent: TrackingType
+    m_EventTreshold: 5
+  - m_ConditionMode: 2
+    m_ConditionEvent: FreezeLocomotion
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: Armbinder
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 2586528746740173094}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 0
 --- !u!1101 &5852700995671443196
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -7573,6 +8083,31 @@ MonoBehaviour:
     destMax: 0
   localOnly: 1
   debugString: 
+--- !u!1101 &6913043174280404369
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: StruggleGame/Contact/ZeniBindForceMax
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 4090793593899304513}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 0
+  m_CanTransitionToSelf: 0
 --- !u!1101 &6979806192457165915
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -7914,6 +8449,28 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 0
+--- !u!1101 &7633443041638642137
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions: []
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 749616140003266656}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 0
 --- !u!114 &7757408786076041091
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7971,6 +8528,31 @@ AnimatorStateTransition:
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 0
+--- !u!1101 &7965785560441374957
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: StruggleGame/Contact/ZeniBindForceLow
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 5145670251466890200}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 0
   m_CanTransitionToSelf: 0
 --- !u!1101 &8114650472140354596
 AnimatorStateTransition:
