@@ -1145,6 +1145,16 @@ MonoBehaviour:
     saved: 1
     hasExplicitDefaultValue: 1
     m_overrideAnimatorDefaults: 0
+  - nameOrPrefix: StruggleGame/FailTimer
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 2
+    localOnly: 1
+    defaultValue: 0
+    saved: 0
+    hasExplicitDefaultValue: 0
+    m_overrideAnimatorDefaults: 0
   - nameOrPrefix: StruggleGame/Shield
     remapTo: 
     internalParameter: 0
