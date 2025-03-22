@@ -5030,7 +5030,7 @@ MonoBehaviour:
   - type: 1
     name: StruggleGame/Level
     source: 
-    value: 0.0051
+    value: -0.0051
     valueMin: 0
     valueMax: 0
     chance: 0
