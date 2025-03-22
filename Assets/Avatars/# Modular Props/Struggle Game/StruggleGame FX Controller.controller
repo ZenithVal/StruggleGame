@@ -1679,7 +1679,7 @@ MonoBehaviour:
     sourceMax: 0
     destMin: 0
     destMax: 0
-  localOnly: 0
+  localOnly: 1
   debugString: '[ZeniStruggleGame] Threshhold Reached'
 --- !u!1101 &-5617083630790523197
 AnimatorStateTransition:
@@ -3323,8 +3323,8 @@ MonoBehaviour:
     convertRange: 1
     sourceMin: 0.25
     sourceMax: 3
-    destMin: 0.21
-    destMax: -0.11
+    destMin: 0.1
+    destMax: -0.45
   - type: 3
     name: StruggleGame/Difficulty
     source: StruggleGame/StartDifficulty
@@ -5878,18 +5878,6 @@ MonoBehaviour:
     sourceMax: 0
     destMin: 0
     destMax: 0
-  - type: 1
-    name: StruggleGame/Level
-    source: 
-    value: 0.0051
-    valueMin: 0
-    valueMax: 0
-    chance: 0
-    convertRange: 0
-    sourceMin: 0
-    sourceMax: 0
-    destMin: 0
-    destMax: 0
   localOnly: 1
   debugString: '[ZeniStruggleGame] Pulled - Too Low'
 --- !u!114 &2481282998153266581
@@ -8075,7 +8063,7 @@ MonoBehaviour:
   - type: 1
     name: StruggleGame/Shield
     source: 
-    value: 0.004
+    value: 0.005
     valueMin: 0
     valueMax: 0
     chance: 0
@@ -8567,7 +8555,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: StruggleGame/Physbone/Ripcord_Stretch
-    m_EventTreshold: 0.025
+    m_EventTreshold: 0.06
   - m_ConditionMode: 3
     m_ConditionEvent: TrackingType
     m_EventTreshold: 5
