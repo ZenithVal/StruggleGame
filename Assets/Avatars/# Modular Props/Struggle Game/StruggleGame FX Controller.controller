@@ -4276,6 +4276,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 1
     m_Controller: {fileID: 0}
+  - m_Name: DBTW
+    m_Type: 1
+    m_DefaultFloat: 1
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   - m_Name: FreezeLocomotion
     m_Type: 4
     m_DefaultFloat: 0
@@ -5114,7 +5120,7 @@ MonoBehaviour:
   - type: 1
     name: StruggleGame/FailTimer
     source: 
-    value: 0.1901
+    value: 0.2101
     valueMin: 0
     valueMax: 0
     chance: 0

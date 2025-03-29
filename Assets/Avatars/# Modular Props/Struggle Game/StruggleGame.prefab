@@ -1037,6 +1037,7 @@ GameObject:
   - component: {fileID: 6628435738874769370}
   - component: {fileID: 8012225114795728157}
   - component: {fileID: 1779955519956113672}
+  - component: {fileID: 5413984761921333503}
   - component: {fileID: 8249383528800416801}
   m_Layer: 0
   m_Name: StruggleGame
@@ -1102,6 +1103,24 @@ MonoBehaviour:
     referencePath: 
     targetObject: {fileID: 0}
   layerPriority: 10
+  mergeAnimatorMode: 0
+--- !u!114 &5413984761921333503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6628435738874769369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 229dd561ca024a6588e388160921a70f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlendTree: {fileID: 20600000, guid: d003cc974432b1d439a957530ca9d6b0, type: 2}
+  PathMode: 1
+  RelativePathRoot:
+    referencePath: 
+    targetObject: {fileID: 0}
 --- !u!114 &8249383528800416801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1122,6 +1141,16 @@ MonoBehaviour:
     syncType: 3
     localOnly: 1
     defaultValue: 0
+    saved: 0
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 0
+  - nameOrPrefix: DBTW
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 0
+    localOnly: 1
+    defaultValue: 1
     saved: 1
     hasExplicitDefaultValue: 1
     m_overrideAnimatorDefaults: 0
