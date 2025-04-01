@@ -1134,6 +1134,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parameters:
+  - nameOrPrefix: DBTW
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 0
+    localOnly: 1
+    defaultValue: 1
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 0
   - nameOrPrefix: StruggleGame/Active
     remapTo: 
     internalParameter: 0
@@ -1144,13 +1154,13 @@ MonoBehaviour:
     saved: 0
     hasExplicitDefaultValue: 1
     m_overrideAnimatorDefaults: 0
-  - nameOrPrefix: DBTW
+  - nameOrPrefix: StruggleGame/Failed
     remapTo: 
     internalParameter: 0
     isPrefix: 0
-    syncType: 0
-    localOnly: 1
-    defaultValue: 1
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
     m_overrideAnimatorDefaults: 0
@@ -1163,14 +1173,24 @@ MonoBehaviour:
     defaultValue: 0.26
     saved: 1
     hasExplicitDefaultValue: 1
-    m_overrideAnimatorDefaults: 0
+    m_overrideAnimatorDefaults: 1
+  - nameOrPrefix: StruggleGame/LevelThreshhold
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 1
+    saved: 1
+    hasExplicitDefaultValue: 1
+    m_overrideAnimatorDefaults: 1
   - nameOrPrefix: StruggleGame/Difficulty
     remapTo: 
     internalParameter: 0
     isPrefix: 0
     syncType: 2
     localOnly: 1
-    defaultValue: 0.1
+    defaultValue: 0
     saved: 1
     hasExplicitDefaultValue: 1
     m_overrideAnimatorDefaults: 0
@@ -1182,16 +1202,6 @@ MonoBehaviour:
     localOnly: 1
     defaultValue: 0
     saved: 0
-    hasExplicitDefaultValue: 0
-    m_overrideAnimatorDefaults: 0
-  - nameOrPrefix: StruggleGame/Shield
-    remapTo: 
-    internalParameter: 0
-    isPrefix: 0
-    syncType: 2
-    localOnly: 0
-    defaultValue: 0
-    saved: 1
     hasExplicitDefaultValue: 1
     m_overrideAnimatorDefaults: 0
   - nameOrPrefix: StruggleGame/ShieldRefill
@@ -1204,27 +1214,17 @@ MonoBehaviour:
     saved: 0
     hasExplicitDefaultValue: 1
     m_overrideAnimatorDefaults: 0
-  - nameOrPrefix: StruggleGame/LevelThreshhold
+  - nameOrPrefix: StruggleGame/Shield
     remapTo: 
     internalParameter: 0
     isPrefix: 0
-    syncType: 3
-    localOnly: 0
-    defaultValue: 1
-    saved: 1
-    hasExplicitDefaultValue: 1
-    m_overrideAnimatorDefaults: 0
-  - nameOrPrefix: StruggleGame/SpamBlock
-    remapTo: 
-    internalParameter: 0
-    isPrefix: 0
-    syncType: 3
+    syncType: 2
     localOnly: 0
     defaultValue: 0
-    saved: 0
+    saved: 1
     hasExplicitDefaultValue: 1
-    m_overrideAnimatorDefaults: 0
-  - nameOrPrefix: ShockOsc/_All_IShock
+    m_overrideAnimatorDefaults: 1
+  - nameOrPrefix: StruggleGame/ForceMax
     remapTo: 
     internalParameter: 0
     isPrefix: 0
@@ -1234,14 +1234,14 @@ MonoBehaviour:
     saved: 0
     hasExplicitDefaultValue: 1
     m_overrideAnimatorDefaults: 0
-  - nameOrPrefix: StruggleGame/AvatarReset
+  - nameOrPrefix: StruggleGame/RemoteHint
     remapTo: 
     internalParameter: 0
     isPrefix: 0
     syncType: 3
     localOnly: 1
     defaultValue: 0
-    saved: 1
+    saved: 0
     hasExplicitDefaultValue: 1
     m_overrideAnimatorDefaults: 0
 --- !u!1 &6628435738986486176
