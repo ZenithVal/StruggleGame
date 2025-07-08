@@ -1081,7 +1081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuToAppend: {fileID: 11400000, guid: 4c9e86a9d15443b46a2c7ab86750cac1, type: 2}
-  installTargetMenu: {fileID: 11400000, guid: c9d4b332b4962ad43916edbef0d99aad, type: 2}
+  installTargetMenu: {fileID: 11400000, guid: 654de3715b9c9fd4b84d343148372a82, type: 2}
 --- !u!114 &1779955519956113672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1468,6 +1468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6628435739748643343}
   - component: {fileID: 6628435739748643344}
+  - component: {fileID: 8128324224477314845}
   m_Layer: 0
   m_Name: JumpGame
   m_TagString: Untagged
@@ -1516,6 +1517,26 @@ MonoBehaviour:
   receiverType: 0
   parameter: StruggleGame/Contact/Jump
   minVelocity: 0.05
+--- !u!1818360608 &8128324224477314845
+PositionConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6628435739748643342}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Weight: 1
+  m_TranslationAtRest: {x: 0, y: 0, z: 0}
+  m_TranslationOffset: {x: 0, y: -0.8738132, z: -0.0013223978}
+  m_AffectTranslationX: 1
+  m_AffectTranslationY: 0
+  m_AffectTranslationZ: 1
+  m_Active: 1
+  m_IsLocked: 1
+  m_Sources:
+  - sourceTransform: {fileID: 6925901796220663310}
+    weight: 1
 --- !u!1 &6628435739759589089
 GameObject:
   m_ObjectHideFlags: 0

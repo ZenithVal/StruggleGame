@@ -2462,6 +2462,18 @@ MonoBehaviour:
     sourceMax: 3
     destMin: 0
     destMax: 3
+  - type: 0
+    name: StruggleGame/LevelThreshhold
+    source: StruggleGame/Difficulty
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 3
+    destMin: 0
+    destMax: 3
   localOnly: 1
   debugString: '[ZeniStruggleGame] Game Begin'
 --- !u!1101 &-3926902432205281553
@@ -3766,6 +3778,18 @@ MonoBehaviour:
     sourceMax: 0
     destMin: 0
     destMax: 0
+  - type: 0
+    name: StruggleGame/LevelThreshhold
+    source: 
+    value: 0
+    valueMin: 0.9001
+    valueMax: 1
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
   - type: 3
     name: StruggleGame/Level
     source: StruggleGame/StartLevel
@@ -3804,18 +3828,6 @@ MonoBehaviour:
     destMax: 0
   - type: 0
     name: StruggleGame/Shield
-    source: 
-    value: 0
-    valueMin: 0.9001
-    valueMax: 1
-    chance: 0
-    convertRange: 0
-    sourceMin: 0
-    sourceMax: 0
-    destMin: 0
-    destMax: 0
-  - type: 0
-    name: StruggleGame/LevelThreshhold
     source: 
     value: 0
     valueMin: 0.9001
@@ -8392,7 +8404,7 @@ AnimatorStateMachine:
     m_Position: {x: 1200, y: 500, z: 0}
   - serializedVersion: 1
     m_StateMachine: {fileID: 836483825958769649}
-    m_Position: {x: 900, y: 200, z: 0}
+    m_Position: {x: 900, y: 210, z: 0}
   - serializedVersion: 1
     m_StateMachine: {fileID: 5750820949397642315}
     m_Position: {x: 190, y: -220, z: 0}
